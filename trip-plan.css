@@ -5,8 +5,10 @@
 body{
     display: flex;
     background: #141416;
+    overflow-x: hidden;
 }
 .head-margin{
+    padding-top: 25px;
     justify-content: space-between;
 }
 .left-margin{
@@ -135,7 +137,7 @@ margin-bottom: 0px;
 }
 .right-margin-body img{
     position: absolute;
-    object-fit: inherit;
+    object-fit: contain;
     width: 100%;
     height: 100%;
 }
@@ -185,7 +187,11 @@ margin-bottom: 0px;
 }
 #left-img1{
 object-fit: contain;
-width: 100%;
+width: 500px;
+height: 570px;
+}
+.bookez-right-body2{
+    padding-right: 200px;
 }
 .bookez-right-body2 p{
 color: #E6E8EC;
@@ -206,8 +212,169 @@ color: #E6E8EC;
 font-size: 16px;
 font-weight: 200;
 }
-
+#howitwork-img{
+object-fit: cover;
+margin-top: -185px;
+}
+#text-howitwork{
+    width: 80%;
+}
+#row-img{
+    margin-left: -80px;
+}
+.pt-10{
+    padding-top: 150px;
+}
+.pl-8{
+    padding-left: 100px;
+}
+.row-goplan{
+    background: rgba(35, 38, 47, 0.7);
+}
+.row-service{
+    background: #131826;
+}
+.row-booking{
+    background: #23262F;
+}
+.text-goplan{
+    padding-top: 150px;
+    padding-left: 150px;
+}
+#btn-goplan{
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 15px;
+    background: #3B71FE;
+}
+#btn-goplan:hover{
+    background: red;
+}
+.fs-10{
+    font-size: 12px;
+}
+.enter-email{
+    padding-top: 10px;
+}
+.enter-email input{
+    background-image: url(../img/circle.png);
+    background-repeat: no-repeat;
+    background-position: 95% center;
+    background-color: #23262F;
+    padding-left: 20px;
+    border-radius: 30px;
+    height: 60px;
+    width: 50%;
+    border: 0px;
+}
+.text-small{
+    padding-top: 20px;
+}
+.bottom-enter-email{
+    padding-left: 200px;
+}
+.text-bottom{
+    font-size: 15px;
+}
+.text-small{
+    font-size: 14px;
+}
+#social-img{
+    object-fit: contain;
+    width: 175px;
+    display: block;
+}
+#social-img1{
+    display: none;
+}
+#enter-email-input1{
+    display: none;
+}
 @media screen and (max-width: 567px) {
+    #first-hr{
+        display: none;
+    }
+    .bookez-right-body2{
+        padding-right: 0px;
+    }
+    #btn-goplan{
+        width: 100px;
+        height: 25px;
+        border: none;
+        border-radius: 15px;
+        background: #3B71FE;
+        font-size: 12px;
+    }
+    #text-secret{
+        font-size: 12px;
+    }
+    .enter-email input {
+        width: 240px !important;
+        height: 40px;
+        background-size: 30px;
+        padding-left: 5px;
+        font-size: 15px;
+        display: none;
+    }
+    .bottom-enter-email{
+        padding-left: 10px;
+    }
+    #social-img{
+        object-fit: none;
+        width: 100%;
+        display: none;
+    }
+    .discover-text{
+        font-size: 12px;
+    }
+    .discover-img1{
+        object-fit: contain;
+        width: 310px;
+    }
+  .discover-img{
+ object-fit: contain;
+width: 220px;
+  }
+    #goplan-img{
+        width: 100%;
+    }
+    .text-goplan{
+        padding-top: 0px;
+        padding-left: 0px;
+    }
+    #text-service{
+        font-size: 12px;
+        font-weight: 200;
+        color: #E6E8EC;
+    }
+    #text-howitwork{
+        font-size: 12px;
+        font-weight: 200;
+        color: #E6E8EC;
+    }
+    #text-booking{
+        font-size: 12px;
+        font-weight: 200;
+        color: #E6E8EC;
+    }
+    #row-img{
+        margin-left: 0px;
+        width: 286px;
+        height: 366px;
+    }
+    #card2-img{
+        width: 286px;
+        height: 366px;
+    }
+    #howitwork-img{
+width: 330px;
+height: 331px;
+margin-top: auto;
+    }
+    #text-howitwork{
+        width: 100%;
+    }
     .partner-bottom1{
         display: flex;
         justify-content: center;
@@ -382,5 +549,16 @@ object-fit: contain;
     color: #E6E8EC;
     font-size: 12px;
     font-weight: 200;
+    }
+    #left-img1{
+        object-fit: contain;
+        width: 327px;
+        height: 340px;
+        }
+    #social-img1{
+        display: block;
+    }
+    #enter-email-input1{
+        display: block;
     }
 }
